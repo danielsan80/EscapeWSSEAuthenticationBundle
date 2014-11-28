@@ -10,6 +10,7 @@ script:
 branches:
   except:
     - 2.0.x
+    - jenkins
 
 notifications:
   email:
