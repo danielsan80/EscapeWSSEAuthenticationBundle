@@ -143,7 +143,7 @@ class Provider implements AuthenticationProviderInterface
 
     protected function isTokenFromFuture($created)
     {
-        return strtotime($created) > strtotime($this->getCurrentTime());
+        return strtotime($created) > strtotime($this->getCurrentTime()) - 30;
     }
 
     protected function isFormattedCorrectly($created)
